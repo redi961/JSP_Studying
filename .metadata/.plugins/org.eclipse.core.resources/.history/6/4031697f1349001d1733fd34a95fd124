@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%  int money = 0;
+	int a = 50000;
+	int b = 10000;
+	int c = 5000;
+	int d = 1000;
+	
+	// Parameter num 값을 받는다
+	String smoney = request.getParameter("money");
+	// Parameter가 정상인지 확인하고 정수로 변환하여 저장
+	if(smoney!=null && smoney.equals("")==false) {
+		money = Integer.parseInt(smoney);
+	}	
+	
+	for (int i = 0; a/money != 0; i++) {
+		money -= a;
+	}
+	
+	%>
+<!DOCTYPE html>
+<html>
+<head><title>계산기 시뮬레이터</title>
+<meta charset="UTF-8">
+</head>
+<body>
+
+	</form>
+	
+</body>
+</html>

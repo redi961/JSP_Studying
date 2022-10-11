@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%  int money = 0;
+	int five_man = 0;
+	int one_man = 0;
+	int five_chun = 0;
+	int chun = 0;
+	
+	if (five_man / money == 0) five_man = (five_man / money); 
+%>
+<!DOCTYPE html>
+<html>
+<head><title>계산기 시뮬레이터</title>
+<meta charset="UTF-8">
+</head>
+<body>
+
+</body>
+</html>

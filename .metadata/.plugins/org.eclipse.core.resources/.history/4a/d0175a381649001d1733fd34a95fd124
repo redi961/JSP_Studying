@@ -1,0 +1,32 @@
+<%@page import="javax.security.auth.message.callback.PrivateKeyCallback.Request"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%	int money = Integer.parseInt(request.getParameter("money"));
+
+	int tmoney = (money / 1000) * 1000;
+	int arr [] = {50000,10000,5000,1000};
+	
+	int money = Integer.parseInt(request.getParameter("money"));
+
+	int tmoney = (money / 1000) * 1000;
+	int arr [] = {50000,10000,5000,1000};
+		
+%>
+<!DOCTYPE html>
+<html>
+<head><title>결과창</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<%for (int t : arr) {
+		int c = tmoney /t;
+		if (0 < c)
+			System.out.printf("%5d원 * %d장 = %d원", t,c,t*c);
+		else 
+			System.out.printf("%5d원\n",t);
+		
+		tmoney -= (t * c);
+	}
+%>
+</body>
+</html>

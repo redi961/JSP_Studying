@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%  int money = 0;
+	int f = 1;
+	// Parameter num 값을 받는다
+	String snum = request.getParameter("num");
+	// Parameter가 정상인지 확인하고 정수로 변환하여 저장
+	if(snum!=null && snum.equals("")==false) {
+		num = Integer.parseInt(snum);
+	}	
+	
+	for (int i = 1; i <= num;i++) {
+		f *= i;
+	}
+	%>
+<!DOCTYPE html>
+<html>
+<head><title>계산기 시뮬레이터</title>
+<meta charset="UTF-8">
+</head>
+<body>
+	<form action="ResultMoney.jsp" method="post">
+		계산할 값을 입력하세요 : <input type ="text" name="num" value="금액" /> <br/>
+		<input type ="submit" value="계산" />
+	</form>
+	
+</body>
+</html>
