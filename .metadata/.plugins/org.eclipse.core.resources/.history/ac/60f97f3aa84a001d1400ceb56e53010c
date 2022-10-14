@@ -1,0 +1,17 @@
+package common;
+import java.util.Random;
+
+public class WeiCalc {
+	public int wei;
+	public int wa;
+	public int wb;
+	public int wc;
+	
+	
+	public WeiCalc() {}
+	public setWei(int a) {
+		this.wei = a;
+	}
+	
+	
+}

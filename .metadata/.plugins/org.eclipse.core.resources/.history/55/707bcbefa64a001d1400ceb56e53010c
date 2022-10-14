@@ -1,0 +1,11 @@
+package common;
+
+public class RandomCalc {
+	public int wei;
+	public int wa;
+	public int wb;
+	public int wc;
+	
+	
+	public Rando
+}

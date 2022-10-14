@@ -1,0 +1,34 @@
+package common;
+import java.util.Random;
+
+public class WeiCalc {
+	public int wei;
+	public int sum;
+	public int i;
+	public int j;
+	public int k;
+	
+	
+	public WeiCalc() {}
+	public WeiCalc(int a) {
+		this.wei = a;
+	}
+	
+	public void calc( ) {
+		for(i=0; i<=wei;i++) {
+			for(j=0;sum<=wei;j++) {
+				for(k=0;sum<=wei;k++) {
+					k = (int)(Math.random()*10)*5;
+							
+				}
+			}
+		}
+	}
+	
+	public int getk() {
+		return k;
+	}
+
+
+	
+}
