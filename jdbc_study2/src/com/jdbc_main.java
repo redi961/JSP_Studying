@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class jdbc_main {
 
@@ -13,7 +14,7 @@ public class jdbc_main {
 		String sql = "select * from board";
 		
 		Class.forName(driver);
-		Connection con = DriverManager.getConnection(url);
+		Connection con = DriverManager.getConnection(url, "musthave", "tiger");
 		Statement st = con.createStatement();
 		ResultSet rs = rs.executeQuery(sql);
 		
