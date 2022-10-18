@@ -15,7 +15,7 @@ pageContext.setAttribute("WeiCalc", new WeiCalc (31));
 	wei.calc();
 	%>
 	<ul>
-		<li>계산 값 : <%= wei.geti()%></li>
+		<li>계산 값 : <%= wei.result()%></li>
 	</ul>
 </body>
 </html>
