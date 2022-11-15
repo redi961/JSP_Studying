@@ -14,7 +14,6 @@
     </ul>
     <h3>영역 지정 없이 속성 읽기</h3>
     <ul>
-    	<%-- Foward 되면서 Page영역이 소멸 -> 그 다음 좁은 영역인 Request 영역 표기 --%>
         <li>${ scopeValue }</li>
     </ul>
 </body>

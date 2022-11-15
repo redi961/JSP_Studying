@@ -20,10 +20,10 @@ application.setAttribute("scopeValue","애플리케이션 영역");
     </ul>
 
     <h3>영역 지정 없이 속성 읽기</h3>
-    <%--별도의 영역 지정없는 기본 탐색영역은 Page 항목--%>
+    <!-- 영역을 지정하지 않으면 가장 좁은 영역에서부터 속성을 찾음 -->
     <ul>
         <li>${ scopeValue }</li> 
-    </ul>
-    <%--<jsp:forward page="ImplicitForwardResult.jsp" /> --%>
+    </ul>    
+  <%--    <jsp:forward page="ImplicitForwardResult.jsp" /> --%>
 </body>
 </html>

@@ -1,14 +1,15 @@
+
 <%@ page import="java.util.List"%>
 <%@ page import="java.util.HashMap"%>
 <%@ page import="java.util.Map"%>
-<%@ page import="board.BoardDAO"%>
-<%@ page import="board.BoardDTO"%>
+<%@ page import="common.BoardDAO"%>
+<%@ page import="common.BoardDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+        
 <%
 // DAO를 생성해 DB에 연결
 BoardDAO dao = new BoardDAO(application);
-
 // 사용자가 입력한 검색 조건을 Map에 저장
 Map<String, Object> param = new HashMap<String, Object>(); 
 String searchField = request.getParameter("searchField");
@@ -17,7 +18,6 @@ if (searchWord != null) {
     param.put("searchField", searchField);
     param.put("searchWord", searchWord);
 }
-
 int totalCount = dao.selectCount(param);  // 게시물 수 확인
 List<BoardDTO> boardLists = dao.selectList(param);  // 게시물 목록 받기
 dao.close();  // DB 연결 닫기
@@ -31,12 +31,12 @@ dao.close();  // DB 연결 닫기
 <title>회원제 게시판</title>
 </head>
 <body>
-    <jsp:include page="../Common/Link.jsp" />  <!-- 공통 링크 -->
+	<jsp:include page="../Common/Link.jsp" />
 
     <h2>목록 보기(List)</h2>
     <!-- 검색폼 --> 
     <form method="get">  
-    <table class="table table-striped" border="1" style="width:90%">
+    <table border="1" width="90%">
     <tr>
         <td align="center">
             <select name="searchField"> 
@@ -50,7 +50,7 @@ dao.close();  // DB 연결 닫기
     </table>
     </form>
     <!-- 게시물 목록 테이블(표) --> 
-    <table class="table table-striped" border="1" style="width:90%">
+    <table class="table table-dark table-striped-columns"border="1" style="" width="90%">
         <!-- 각 칼럼의 이름 --> 
         <tr>
             <th width="10%">번호</th>

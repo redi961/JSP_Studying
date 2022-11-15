@@ -8,6 +8,16 @@
     <c:forEach begin="1" end="3" step="1" var="i">
         <p>반복 ${ i }입니다</p>
     </c:forEach>
+    <%
+    int i=1;
+    int[] arr= new int[3];
+    for(;i<4;i++){    	
+    	%>
+    	<p>반복 <%=i%>입니다</p>
+    	<%
+    }    
+    	%>
+    	
     <h4>varStatus 속성 살펴보기</h4>
     <table border="1">
     <c:forEach begin="3" end="5" var="i" varStatus="loop">
@@ -20,7 +30,6 @@
         </tr>
     </c:forEach>
     </table>
-
 
     <h4>1에서 100까지 정수 중 홀수의 합</h4>
     <c:forEach begin="1" end="100" var="j">

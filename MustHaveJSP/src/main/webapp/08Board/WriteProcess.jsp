@@ -1,7 +1,7 @@
-<%@ page import="board.BoardDAO"%>
-<%@ page import="board.BoardDTO"%>
+<%@ page import="common.BoardDAO"%>
+<%@ page import="common.BoardDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@ include file="./IsLoggedIn.jsp"%>
 <%
 // 폼값 받기
@@ -21,8 +21,8 @@ dao.close();
 
 // 성공 or 실패? 
 if (iResult == 1) {
-    response.sendRedirect("List.jsp");
+	response.sendRedirect("List.jsp");
 } else {
-    JSFunction.alertBack("글쓰기에 실패하였습니다.", out);
+	JSFunction.alertBack("글쓰기에 실패하였습니다.", out);
 }
 %>

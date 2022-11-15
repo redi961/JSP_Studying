@@ -22,7 +22,6 @@ pageContext.setAttribute("sizeZero", new ArrayList());
     empty sizeZero : ${ empty sizeZero }
     
     <h3>삼항 연산자</h3>
-    
     num1 gt num2 ? "참" : "거짓" => ${ num1 gt num2 ? "num1이 크다" : "num2가 크다" }
     
     <h3>null 연산</h3>

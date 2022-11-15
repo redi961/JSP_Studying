@@ -1,10 +1,5 @@
-1665449239833	Delete element
-1665449281274	Move 'HelloJSP.jsp' to '01_Start'
-1665449284870	Move 'Calc.jsp' to '01_Start'
-1665449287520	Move 'Fact.jsp' to '01_Start'
-1665449292156	Delete element
-1665622381984	Rename resource 'PageInclude.jsp'
-1665622638183	Copy package
-1665623017272	Delete element
-1665623019112	Delete element
-1665631636664	Rename compilation unit 'RandomCalc.java'
+1665455034558	Rename resource 'ResponesMain.jsp'
+1665455218434	Delete element
+1665457227297	Rename resource 'MoneyResponese.jsp'
+1665633259519	Move 'Person.java' to 'webapp'
+1665633533833	Move file

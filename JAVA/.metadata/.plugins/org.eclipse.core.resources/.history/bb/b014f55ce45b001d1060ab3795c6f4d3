@@ -1,0 +1,20 @@
+package ch05;
+
+class Point {
+	int x, y;
+
+	public Point(int x, int y) {
+		super();
+		this.x = x;
+		this.y = y;
+
+	}
+
+public class ss {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=""/>
+		<item key="selection" value="saveFile1"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="rgb"/>
-			<item value="dto"/>
-			<item value="cont"/>
-			<item value="getc"/>
-			<item value="title"/>
+			<item value="savefile1"/>
+			<item value="uploadfile"/>
+			<item value="post"/>
+			<item value="seq_"/>
+			<item value="seq_board num"/>
+			<item value="seq_board_num.NEXTVAL"/>
+			<item value="DESC"/>
 			<item value="제목"/>
-			<item value="field"/>
+			<item value="title"/>
+			<item value="DESC\"/>
+			<item value="SELECT * FROM board ORDER BY num DESC"/>
+			<item value="&#x09;SELECT * FROM board ORDER BY num DESC"/>
+			<item value="select * from"/>
 			<item value="select"/>
-			<item value="vali"/>
-			<item value="result"/>
-			<item value="Board"/>
-			<item value="web"/>
-			<item value="rs"/>
-			<item value="rem"/>
+			<item value="setMax"/>
 		</list>
 		<list key="replacehistory">
 		</list>

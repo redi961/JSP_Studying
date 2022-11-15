@@ -1,5 +1,5 @@
-<%@ page import="board.BoardDAO"%>
-<%@ page import="board.BoardDTO"%>
+<%@ page import="common.BoardDAO"%>
+<%@ page import="common.BoardDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="./IsLoggedIn.jsp"%> 
@@ -35,7 +35,7 @@ function validateForm(form) {  // 폼 내용 검증
 </script>
 </head>
 <body>
-<jsp:include page="../Common/Link.jsp" />
+
 <h2>회원제 게시판 - 수정하기(Edit)</h2>
 <form name="writeFrm" method="post" action="EditProcess.jsp"
       onsubmit="return validateForm(this);">
