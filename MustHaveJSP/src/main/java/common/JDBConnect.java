@@ -86,6 +86,7 @@ public class JDBConnect {
 
             // DB에 연결
             con = DriverManager.getConnection(url, id, pwd);
+            System.out.println("con :: " + con);
 
             return true;
         }
