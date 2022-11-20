@@ -27,6 +27,7 @@
 </script>
 </head>
 <h2>파일 첨부형 게시판 - 수정하기(Edit)</h2>
+    <!-- 파일 업로드 / 다운로드형 폼을 작성하게 위하여 enctype="multipart/form-data"을 기입함 -->
 <form name="writeFrm" method="post" enctype="multipart/form-data" action="../mvcboard/edit.do" onsubmit="return validateForm(this);">
 <input type="hidden" name="idx" value="${ dto.idx }"/>
 <input type="hidden" name="prevOfile" value="${ dto.ofile }" />
